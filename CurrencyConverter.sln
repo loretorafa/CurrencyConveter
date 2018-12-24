@@ -3,9 +3,65 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Test", "0 - Test", "{8B6379B2-6AFC-4122-9242-27A3277053F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{2B1789E2-55F8-45F3-9628-38349E6ED515}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{04B3B772-DA35-4F3A-B25A-CF4B90A0C723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Services", "3 - Services", "{BEED7F2A-1EE7-40A6-8BDD-6AA2B405B05E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyConverter.Application", "CurrencyConverter.Application\CurrencyConverter.Application.csproj", "{7C9820C7-395F-43D2-A950-E195F188559C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyConverter.Domain", "CurrencyConverter.Domain\CurrencyConverter.Domain.csproj", "{A1C051E0-2050-4C91-8AF2-0E2AF3F9976B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyConverter.Services", "CurrencyConverter.Services\CurrencyConverter.Services.csproj", "{A5F51314-D287-438E-9727-5B0D53886AF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{D04A88A8-734E-499B-9C6A-7A8AF66CF1BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - CrossCutting", "4.1 - CrossCutting", "{FEBC48B6-BA91-4E24-B2E0-AD07A4718129}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyConverter.Infrastructure.CrossCutting", "CurrencyConverter.Infrastructure.CrossCutting\CurrencyConverter.Infrastructure.CrossCutting.csproj", "{70EE1439-9166-4125-BEAD-1F34DD5C52A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Test", "CurrencyConverter.Test\CurrencyConverter.Test.csproj", "{A02D5BE4-6280-4196-85D8-EE8E759E349F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C9820C7-395F-43D2-A950-E195F188559C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9820C7-395F-43D2-A950-E195F188559C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9820C7-395F-43D2-A950-E195F188559C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9820C7-395F-43D2-A950-E195F188559C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1C051E0-2050-4C91-8AF2-0E2AF3F9976B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C051E0-2050-4C91-8AF2-0E2AF3F9976B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C051E0-2050-4C91-8AF2-0E2AF3F9976B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C051E0-2050-4C91-8AF2-0E2AF3F9976B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F51314-D287-438E-9727-5B0D53886AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F51314-D287-438E-9727-5B0D53886AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F51314-D287-438E-9727-5B0D53886AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F51314-D287-438E-9727-5B0D53886AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70EE1439-9166-4125-BEAD-1F34DD5C52A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EE1439-9166-4125-BEAD-1F34DD5C52A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EE1439-9166-4125-BEAD-1F34DD5C52A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EE1439-9166-4125-BEAD-1F34DD5C52A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02D5BE4-6280-4196-85D8-EE8E759E349F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02D5BE4-6280-4196-85D8-EE8E759E349F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02D5BE4-6280-4196-85D8-EE8E759E349F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02D5BE4-6280-4196-85D8-EE8E759E349F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C9820C7-395F-43D2-A950-E195F188559C} = {2B1789E2-55F8-45F3-9628-38349E6ED515}
+		{A1C051E0-2050-4C91-8AF2-0E2AF3F9976B} = {04B3B772-DA35-4F3A-B25A-CF4B90A0C723}
+		{A5F51314-D287-438E-9727-5B0D53886AF8} = {BEED7F2A-1EE7-40A6-8BDD-6AA2B405B05E}
+		{FEBC48B6-BA91-4E24-B2E0-AD07A4718129} = {D04A88A8-734E-499B-9C6A-7A8AF66CF1BA}
+		{70EE1439-9166-4125-BEAD-1F34DD5C52A5} = {FEBC48B6-BA91-4E24-B2E0-AD07A4718129}
+		{A02D5BE4-6280-4196-85D8-EE8E759E349F} = {8B6379B2-6AFC-4122-9242-27A3277053F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66477C77-3578-4F6B-BFC2-32478ABCC5C5}
